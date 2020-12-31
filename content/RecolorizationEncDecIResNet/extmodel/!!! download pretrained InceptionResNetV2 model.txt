@@ -1,0 +1,9 @@
+# !!! download pretrained InceptionResNetV2 model:
+''' load and save InceptionResNet-model (first load)
+modelInceptionResNet = InceptionResNetV2(weights='imagenet', include_top=True)
+modelInceptionResNet.summary()
+save_model = modelInceptionResNet.to_json()
+with open(working_path + '/extmodel/' + 'modelInceptionResNet.json', "w") as json_file:
+  json_file.write(save_model)
+modelInceptionResNet.save_weights(working_path + '/extmodel/' + 'modelInceptionResNet.h5')
+'''
