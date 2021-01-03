@@ -12,13 +12,13 @@ The training of the network is studied with respect to two different loss functi
 ### 1. [regression model](./content/RecolorizationEncDecIResNet_regressionModel.ipynb)
 The underlying autoencoder model with regression loss is mainly based on the Refs. [1,2].
 
-![plot](./modelRegression.png)
+<kbd>![plot](./modelRegression.png)</kbd>
 
 
 ### 2. [color-classification model](./content/RecolorizationEncDecIResNet_colorClassificationModel.ipynb)
 Here, I replaced the decoder part of the original model to an output volume with 394 different color classes for a, b chanells of the CIELAB color space. The cross-entropy loss accounts for the class imbalance problem by reweighting the loss w.r.t. rare pixel colors as it was done in Ref. [3].
 
-![plot](./modelClassification.png)
+<kbd>![plot](./modelClassification.png)</kbd>
 
 
 
