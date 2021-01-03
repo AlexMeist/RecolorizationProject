@@ -9,32 +9,35 @@ The training of the network is studied with respect to two different loss functi
 
 ## For a detailed description of the implementation, choosen hyperparameters and metrics see the [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf). 
 
-### 1. regression model: [RecolorizationEncDecIResNet_regressionModel.ipynb](./content/RecolorizationEncDecIResNet_regressionModel.ipynb)
+### 1. [regression model](./content/RecolorizationEncDecIResNet_regressionModel.ipynb)
 The underlying autoencoder model with regression loss is mainly based on the Refs. [1,2].
 ![plot](./modelRegression.png)
 
 
-### 2. color-classification model: RecolorizationEncDecIResNet_colorClassificationModel.ipynb
+### 2. [color-classification model](./content/RecolorizationEncDecIResNet_colorClassificationModel.ipynb)
 Here, I replaced the decoder part of the original model to an output volume with 394 different color classes for a, b chanells of CIELAB color space. The cross entropy loss accounts for the class imbalance problem by reweighting the loss w.r.t. rare pixel colors as it was done in Ref. [3].
 ![plot](./modelClassification.png)
 
 
 
 
-Both regression and classificationmodels show a decent performance in recoloring the old movie posters. Especially, in case of the classificationmodel the results are very colorful and brighter than the original images. In comparison to the final report I also included the results obtained for the classification model   
+Both regression and classificationmodels show a decent performance in recoloring the old movie posters. Especially, in case of the classificationmodel the results are very colorful and brighter than the original images. In comparison to the [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf) I also included the results obtained for the classification model and 40K training images, requiring an additional week of training time.   
 
 ![plot](./finalResultFull1.png)
 ![plot](./finalResultFull2.png)
 ![plot](./finalResultFull3.png)
 
-Main References:
+
+### Main References:
+
 [1] [Deep-Koalarization: Image Colorization using CNNs and Inception-ResNet-v2](https://github.com/baldassarreFe/deep-koalarization)
 
 [2] [Colorizing Black and White Images with Neural Networks](https://github.com/emilwallner/Coloring-greyscale-images)
 
 [3] [Colorful Image Colorization](https://richzhang.github.io/colorization/)
 
-Further References (see final report):
+
+### Further References (see final report):
 
 [Colorization using optimization](https://doi.org/10.1145/1015706.1015780)
 
