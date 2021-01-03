@@ -2,7 +2,7 @@
 ### Introduction
 
 The motivation for this work arises from my observation of an increasing interest in screening events of old movies.
-The focus lies on recoloring of movie posters between old and modern color schemes. Refreshed colors could be a promising approach for attracting new audience to screening events of old classics in movie theaters. Following that, the input is a colored RGB image, more specifically a movie poster, which is then transformed to a grey-scaled image and is recolored by a CNN encoder-decoder architecture within the CIELAB color space (The CIELAB color space is designed to account for visually perceived changes in luminance and human perception of distances between colors.). The output image is then obtained by transforming back to RGB channels.
+The focus lies on recoloring of movie posters between old and modern color schemes. Refreshed colors could be a promising approach for attracting new audience to screening events of old classics in movie theaters. Following that, the input is a colored RGB image, more specifically a movie poster, which is then transformed to a grey-scaled image and is recolored by a CNN encoder-decoder architecture within the CIELAB color space. The output image is then obtained by transforming back to RGB channels.
 
 The training of the network is studied with respect to two different loss functions. The objective function of the first model is minimized with respect to the L2 loss between the output pixels and the ground truth pixels per color channel of the CIELAB color space. The objective function of the second model is minimized with respect to the multinomial cross-entropy loss between the output layer with a depth of 394 color classes and the corresponding soft-encoding scheme of the ground truth representation. Here, the final result is obtained by transforming the 394 color classes to the corresponding a,b outputs in CIELAB space and adding them to the L-channel, containing the grey-scaled information of the image.
 
@@ -15,7 +15,7 @@ The underlying autoencoder model with regression loss is mainly based on the Ref
 
 
 ### 2. [color-classification model](./content/RecolorizationEncDecIResNet_colorClassificationModel.ipynb)
-Here, I replaced the decoder part of the original model to an output volume with 394 different color classes for a, b chanells of CIELAB color space. The cross-entropy loss accounts for the class imbalance problem by reweighting the loss w.r.t. rare pixel colors as it was done in Ref. [3].
+Here, I replaced the decoder part of the original model to an output volume with 394 different color classes for a, b chanells of the CIELAB color space. The cross-entropy loss accounts for the class imbalance problem by reweighting the loss w.r.t. rare pixel colors as it was done in Ref. [3].
 ![plot](./modelClassification.png)
 
 
