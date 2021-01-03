@@ -9,7 +9,7 @@ The training of the network is studied with respect to two different loss functi
 
 ## For a detailed description of the implementation, choosen hyperparameters and metrics see the [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf). 
 
-### 1. regression model: [RecolorizationEncDecIResNet_regressionModel.ipynb](./content/RecolorizationEncDecIResNet_regressionModel.ipynb
+### 1. regression model: [RecolorizationEncDecIResNet_regressionModel.ipynb](./content/RecolorizationEncDecIResNet_regressionModel.ipynb)
 The underlying autoencoder model with regression loss is mainly based on the Refs. [1,2].
 ![plot](./modelRegression.png)
 
