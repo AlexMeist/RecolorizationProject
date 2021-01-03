@@ -20,6 +20,7 @@ Here, I replaced the decoder part of the original model to an output volume with
 
 
 
+## Results
 
 Both regression and classificationmodels show a decent performance in recoloring the old movie posters. Especially, in case of the classificationmodel the results are very colorful and brighter than the original images. In comparison to the [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf) I also included the results obtained for the classification model and 40K training images, requiring an additional week of training time.   
 
