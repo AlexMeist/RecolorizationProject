@@ -7,7 +7,7 @@ The focus lies on recoloring of movie posters between old and modern color schem
 The training of the network is studied with respect to two different loss functions. The objective function of the first model is minimized with respect to the L2 loss between the output pixels and the ground truth pixels per color channel of the CIELAB color space. The objective function of the second model is minimized with respect to the multinomial cross-entropy loss between the output layer with a depth of 394 color classes and the corresponding soft-encoding scheme of the ground truth representation. Here, the final result is obtained by transforming the 394 color classes to the corresponding $a,b$ outputs in CIELAB space and adding them to the L-channel, containing the grey-scaled information of the image.
 
 
-## For a detailed description of the implementation, choosen hyperparameters and metrics see: [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf),  [presentation](./Automatic%20recolorization.pdf) and [YouTube-Video](https://www.youtube.com/watch?v=r_I2p61o_fk&t=1s). 
+## See [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf), [presentation](./Automatic%20recolorization.pdf) and [YouTube-Video](https://www.youtube.com/watch?v=r_I2p61o_fk&t=1s) for a detailed description of the implementation, choosen hyperparameters and metrics. 
 
 ### 1. [regression model](./content/RecolorizationEncDecIResNet_regressionModel.ipynb)
 The underlying autoencoder model with regression loss is mainly based on the Refs. [1,2].
