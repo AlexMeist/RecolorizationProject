@@ -16,7 +16,7 @@ The underlying autoencoder model with regression loss is mainly based on the Ref
 
 
 ### 2. [color-classification model](./content/RecolorizationEncDecIResNet_colorClassificationModel.ipynb)
-Here, I replaced the decoder part of the original model to an output volume with 394 different color classes for a, b chanells of the CIELAB color space. The cross-entropy loss accounts for the class imbalance problem by reweighting the loss w.r.t. rare pixel colors as it was done in Ref. [3].
+Here, I replaced the decoder part of the original model to an output volume with 394 different color classes for a, b channels in CIELAB color space. The cross-entropy loss accounts for the class imbalance problem by reweighting the loss w.r.t. rare pixel colors as it was done in Ref. [3].
 
 <kbd>![plot](./modelClassification.png)</kbd>
 
