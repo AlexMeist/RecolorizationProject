@@ -1,43 +1,52 @@
 # RecolorizationProject
-- the underlying autoencoder model with regression loss is mainly based on the Refs. 
 
-- read final report for a detailed description of the 
+# 1. jupyter-notebook: RecolorizationEncDecIResNet_regressionModel.ipynb
+- the underlying autoencoder model with regression loss is mainly based on the Refs. [1,2]
 
-final results
+# 2. jupyter-notebook: RecolorizationEncDecIResNet_colorClassificationModel.ipynb
+- here
+
+
+
+- read final report for a detailed description of the implementation, choosen hyperparameters as well as  
+
+The following images show final results from applying the  
 ![plot](./finalResultFull1.png)
 ![plot](./finalResultFull2.png)
 ![plot](./finalResultFull3.png)
 
+Main References:
+[1] [Deep-Koalarization: Image Colorization using CNNs and Inception-ResNet-v2](https://github.com/baldassarreFe/deep-koalarization)
 
-[] [Colorization using optimization](https://doi.org/10.1145/1015706.1015780)
+[2] [Colorizing Black and White Images with Neural Networks](https://github.com/emilwallner/Coloring-greyscale-images)
 
-[] [An adaptive edge detection based colorization algorithm and its applications](https://doi.org/10.1145/1101149.1101223)
+Further References (see final report):
 
-[] [Let there be color!: joint end-to-end learning of global and local image priors for automatic image colorization with simultaneous classification](https://doi.org/10.1145/2897824.2925974)
+[Colorization using optimization](https://doi.org/10.1145/1015706.1015780)
 
-[] [Learning Representations for Automatic Colorization](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_35)
+[An adaptive edge detection based colorization algorithm and its applications](https://doi.org/10.1145/1101149.1101223)
 
-[] [Inception-v4, inception-ResNet and the impact of residual connections on learning](https://dl.acm.org/doi/10.5555/3298023.3298188)
+[Let there be color!: joint end-to-end learning of global and local image priors for automatic image colorization with simultaneous classification](https://doi.org/10.1145/2897824.2925974)
 
-[] [Deep-Koalarization: Image Colorization using CNNs and Inception-ResNet-v2](https://github.com/baldassarreFe/deep-koalarization)
+[Learning Representations for Automatic Colorization](https://link.springer.com/chapter/10.1007/978-3-319-46493-0_35)
 
-[] [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://www.springerprofessional.de/perceptual-losses-for-real-time-style-transfer-and-super-resolut/10708994)
+[Inception-v4, inception-ResNet and the impact of residual connections on learning](https://dl.acm.org/doi/10.5555/3298023.3298188)
 
-[] [Pixel-level Semantics Guided Image Colorization](http://bmvc2018.org/contents/papers/0236.pdf)
+[Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://www.springerprofessional.de/perceptual-losses-for-real-time-style-transfer-and-super-resolut/10708994)
 
-[] [ChromaGAN: Adversarial Picture Colorization with Semantic Class Distribution](https://ieeexplore.ieee.org/document/9093389)
+[Pixel-level Semantics Guided Image Colorization](http://bmvc2018.org/contents/papers/0236.pdf)
 
-[] [Colorizing Black and White Images with Neural Networks](https://github.com/emilwallner/Coloring-greyscale-images)
+[ChromaGAN: Adversarial Picture Colorization with Semantic Class Distribution](https://ieeexplore.ieee.org/document/9093389)
 
-[] [Line Drawing Colorization](http://cs231n.stanford.edu/reports/2017/pdfs/425.pdf)
+[Line Drawing Colorization](http://cs231n.stanford.edu/reports/2017/pdfs/425.pdf)
 
-[] [AutoColorization of Monochrome Images](http://cs231n.stanford.edu/reports/2017/pdfs/418.pdf)
+[AutoColorization of Monochrome Images](http://cs231n.stanford.edu/reports/2017/pdfs/418.pdf)
 
-[] [Exploring Convolutional Neural Networks for Automatic Image Colorization](http://cs231n.stanford.edu/reports/2017/pdfs/409.pdf)
+[Exploring Convolutional Neural Networks for Automatic Image Colorization](http://cs231n.stanford.edu/reports/2017/pdfs/409.pdf)
 
-[] [Image Colorization Using Generative Adversarial Networks](https://github.com/ImagingLab/Colorizing-with-GANs)
+[Image Colorization Using Generative Adversarial Networks](https://github.com/ImagingLab/Colorizing-with-GANs)
 
-[] [Colorful Image Colorization](https://richzhang.github.io/colorization/)
+[Colorful Image Colorization](https://richzhang.github.io/colorization/)
 
-[] [Automatic Image Colorization Via Multimodal Predictions](https://link.springer.com/chapter/10.1007/978-3-540-88690-7_10)
+[Automatic Image Colorization Via Multimodal Predictions](https://link.springer.com/chapter/10.1007/978-3-540-88690-7_10)
 
