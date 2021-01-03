@@ -7,7 +7,7 @@ The focus lies on recoloring of movie posters between old and modern color schem
 The training of the network is studied with respect to two different loss functions. The objective function of the first model is minimized with respect to the L2 loss between the output pixels and the ground truth pixels per color channel of the CIELAB color space. The objective function of the second model is minimized with respect to the multinomial cross-entropy loss between the output layer with a depth of 394 color classes and the corresponding soft-encoding scheme of the ground truth representation. Here, the final result is obtained by transforming the 394 color classes to the corresponding a,b outputs in CIELAB space and adding them to the L-channel, containing the grey-scaled information of the image.
 
 
-## See [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf), [presentation](./Automatic%20recolorization.pdf) and [YouTube-Video](https://www.youtube.com/watch?v=r_I2p61o_fk&t=1s) for a detailed description of the implementation, choosen hyperparameters and metrics. 
+## See [final report](./AlexMeistrenko_CS230_Fall_2020_FinalReport.pdf), [presentation](./Automatic%20recolorization.pdf) and [YouTube-Video](https://www.youtube.com/watch?v=r_I2p61o_fk&t=1s) for a detailed description of the implementation, chosen hyperparameters and metrics. 
 
 ### 1. [regression model](./content/RecolorizationEncDecIResNet_regressionModel.ipynb)
 The underlying autoencoder model with regression loss is mainly based on the Refs. [1,2].
@@ -35,11 +35,11 @@ Both regression and classification models show a decent performance in recolorin
 
 ### Main References:
 
-[1] [Deep-Koalarization: Image Colorization using CNNs and Inception-ResNet-v2](https://github.com/baldassarreFe/deep-koalarization)
+[1] [Deep-Koalarization: Image Colorization using CNNs and Inception-ResNet-v2, by Federico Baldassarre, Diego Gonzalez Morín and Lucas Rodés-Guirao](https://github.com/baldassarreFe/deep-koalarization)
 
-[2] [Colorizing Black and White Images with Neural Networks](https://github.com/emilwallner/Coloring-greyscale-images)
+[2] [Colorizing Black and White Images with Neural Networks, by Emil Wallner](https://github.com/emilwallner/Coloring-greyscale-images)
 
-[3] [Colorful Image Colorization](https://richzhang.github.io/colorization/)
+[3] [Colorful Image Colorization, by Richard Zhang, Phillip Isola and Alexei A. Efros](https://richzhang.github.io/colorization/)
 
 
 ### Further References (see final report):
