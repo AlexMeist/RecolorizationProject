@@ -1,5 +1,5 @@
 # RecolorizationProject
-- the model of this project is mainly based on the Refs. 
+- the underlying autoencoder model with regression loss is mainly based on the Refs. 
 
 - read final report for a detailed description of the 
 
@@ -9,4 +9,4 @@ final results
 ![plot](./finalResultFull3.png)
 
 
-https://doi.org/10.1145/1015706.1015780
+[] Colorization using optimization, Levin et al., https://doi.org/10.1145/1015706.1015780
